@@ -1,0 +1,38 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+
+WorldInfo {
+  title "Dynamic N Drones"
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation -0.11827250581445849 -0.17429421576473267 0.9775649035840669 5.06962714845963
+  position -13.502885811158963 21.257043359037077 8.202785898840375
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 400 400
+  tileSize 6 6
+}
+Mavic2Pro {
+  translation 5.489916160561492e-11 -1.6903421717895384e-10 0.06570872787430694
+  rotation -0.0348252016170707 -0.046663889821326576 -0.998303404140782 1.2839164868526496
+  controller "drone_spawner"
+  controllerArgs [
+    "3"
+  ]
+  supervisor TRUE
+}
+Door {
+  translation -1.26 0 0
+  rotation 0 0 1 -2.6179953071795863
+  position -2.000
+}
