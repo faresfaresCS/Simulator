@@ -23,16 +23,26 @@ Floor {
   tileSize 6 6
 }
 Mavic2Pro {
-  translation 5.489916160561492e-11 -1.6903421717895384e-10 0.06570872787430694
-  rotation -0.0348252016170707 -0.046663889821326576 -0.998303404140782 1.2839164868526496
-  controller "drone_spawner"
+  translation -1.3288457520904293 -1.183111303105096 0.015454442681929838
+  rotation 0.23782585864380618 -0.9713078094965284 1.3091689429278078e-05 3.14145596813436
+  controller "supervisor_controller"
   controllerArgs [
     "3"
   ]
   supervisor TRUE
+  Emitter {
+    name "emitter"
+    channel 1
+  }
+  Receiver {
+    name "receiver"
+    channel 1
+  }
 }
 Door {
+  hidden translation_5 0.387654012906663 -0.037568210860985385 4.440892098500626e-16
+  hidden rotation_5 0 0 -1 0.801643339290277
   translation -1.26 0 0
   rotation 0 0 1 -2.6179953071795863
-  position -2.000
+  position -0.8008628798573714
 }
